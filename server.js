@@ -25,5 +25,5 @@ app.use("/api/personne", require("./Route/personne")); //path initial du personn
 const port = process.env.PORT || 5000;
 
 app.listen(port, (error) => {
-  error ? console.log(error) : console.log(`the server is running on:${port}`);
+  error ? console.log(error) : console.log(`the server is running on:${port}`);  
 });

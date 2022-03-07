@@ -39,9 +39,9 @@ router.post("/add", async (req, res) => {
 });
 /**
  * methode:get ALL
- * path:http://localhost:5000/api/personnes/all
+ * path:http://localhost:5000/api/personnes/
  */
-router.get("/all", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const personList = await Personne.find();
     return res
